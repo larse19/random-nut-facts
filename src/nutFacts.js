@@ -1,4 +1,4 @@
-const facts = [
+const nutFacts = [
   "Cashews are in the same plant family as poison ivy and poison sumac, and their itch-inducing oil is contained in the shell. That’s why you won’t find cashews sold with the shells on the way some other nuts are.",
   "Pistachios are classified as a fruit, and they get their green color from chlorophyll – the same pigment that makes kale green.",
   "This is important, since your body cannot make omega-3 fats on its own, which is why you should try to include omega-3-rich foods in your diet. Aside from helping to protect against heart disease and stroke, omega-3 fats have been found to offer protection against wide range of illnesses, from cancer and rheumatoid arthritis to inflammatory bowel disease and depression. Just one-quarter cup of walnuts gives you nearly 91 percent of the recommended daily value for this healthy fat.",
@@ -23,7 +23,18 @@ const facts = [
   "The daily limit of nuts is just one handful. No, I am not kidding but most people tend to overeat them as they are just too delicious.",
 ];
 
+const equations = [
+  "y=a·x+b",
+  "a=(y_2-y_1)/(x_2-x_1 )",
+  "y=a·(x-x_0 )+y_0",
+  "y=f^' (x_0 )·(x-x_0 )+f(x_0 )",
+  "y=b·a^x",
+];
+
 export const randomNutFact = () => {
-  console.log(Math.random() * facts.length);
-  return facts[parseInt(Math.random() * facts.length)];
+  return nutFacts[parseInt(Math.random() * nutFacts.length)];
+};
+
+export const randomEquation = () => {
+  return equations[parseInt(Math.random() * equations.length)];
 };
